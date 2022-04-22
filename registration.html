@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="faq_tech_support.css"/>
+    <script src="faq_main.js"></script>
+    <title>FAQ Tech Support</title>
+  </head>
+  <body>
+    <form class="search_wrap" autocomplete="off" action="">
+      <div class="autocomplete">
+        <input id="myInput" type="search" name="myCountry" placeholder="Search Terms...">
+        <button type="button" onclick="findString(myInput.value)" id="btn" class="btn">
+          <span class="fas fa-search"></span>
+        </button>
+      </div>
+    </form>
+    <nav class="breadcrumb">
+        <a class="Img-wrap" href="faq_HALO.html"><img class="HALO" src="faq_images/favicon3.png" alt="HALO Icon"></a>
+      <ul>
+        <p class="TOC">Table of Contents</p>
+        <li><a class="TOC_Space" href="faq_NEMO.html">NEMO</a></li>
+      </ul>
+      <div class="dropdown">
+        <a href="registration.html"><button class="dropbtn">Registration</button></a>
+        <div class="dropdown-content">
+          <a href="#Registration_Page">Register a User</a>
+          <a href="#Register_Fail">First Step of Registration</a>
+          <a href="#Face_Detect_Fail">Face Detection Failure</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="user_issues.html"><button class="dropbtn">User Issues</button></a>
+        <div class="dropdown-content">
+          <a href="#Exam_Resume">Resume an Exam For User</a>
+          <a href="#Exam_Delete">Delete an Exam Attempt</a>
+          <a href="#Exam_Attempts">Find User Exam Attempt</a>
+          <a href="#Password_Reset">Resetting User Password</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="Pre_exam_issues.html"><button class="dropbtn">Pre - Exam Issues</button></a>
+        <div class="dropdown-content">
+          <a href="#Pre_Scan">Pre-environment Scan</a>
+          <a href="#App_issues">App or Browser Related Issues</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="Mac_issues.html"> <button class="dropbtn">Mac / Apple Issues</button></a>
+        <div class="dropdown-content">
+          
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="PC_issues.html"> <button class="dropbtn">Windows / PC Issues</button></a>
+        <div class="dropdown-content">
+            <a href="#Perm_issuee">Windows Permission Issue</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="Exam_Issues.html"><button class="dropbtn">During Exam</button></a>
+        <div class="dropdown-content">
+          <a href="#Camera_Issues">Camera Permissions</a>
+          <a href="#Exam_Dropdown">Exam Missing in Dropdown</a>
+          <a href="#Exam_Freeze">Exam Freeze</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="Email_templates.html"> <button class="dropbtn">Email Templates</button></a>
+        <div class="dropdown-content">
+          <a href="#Email_Template">User Invalid ID Email</a>
+          <a href="#Email_Password">Password reset Email</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Video Examples <em>(Dated)</em></button>
+        <div class="dropdown-content">
+          <a target="_blank" href="https://www.dropbox.com/s/ji7f0wsp7v7sdg8/Halo%20-%20Build%20Question%20Banks.mp4?dl=0">Creating HALO Exam</a>
+          <a target="_blank" href="https://northeastmaritime.monday.com/boards/140645215/pulses/899485963/posts/859958364">Adding Exam to HALO</a>
+          <a target="_blank" href="https://www.dropbox.com/s/iwssuljjt8mwfs4/HALO%20Exams%20-Enrolling%20a%20Student%20Into%20an%20Exam%20.mp4?dl=0">Enrolling Users in Exams</a>
+        </div>
+      </div>
+      <div class="Padding">
+        <div class="far fa-question-circle" id="tooltip">
+          <span id="tooltiptext">
+            Clicking on one of the grey Headers above will direct you to its specific page. While on this page you can use the dropdown menu provided when hovering over a grey header, to navigate through specific sections of the page.    </span>
+        </div>
+       </div>
+    </nav>
+    <main class="main">
+      <header class="faq-header">Registration</header>
+      <div id="Registration_Page" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">Registration:</p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+            Registration is a 2-step process:
+          </p>
+          <p id="indent" class="faq-info">
+            Step 1: User Information Application <a href="https://haloexams.com/users/NEMOApplication/ ">Here</a> <br>
+          </p>
+          <p id="indent" class="faq-info">
+            Step 2: Register for an Account on HALO <a href="https://haloexams.com/registerNEMO/">Here</a> <br>
+            Submissions from Step 1 can be found on “Applicants” in the Admin
+            portal.
+          </p>
+          <img
+            src="faq_images/Registration-faq.png"
+            alt="Applicants admin portal"
+            class="faq-image"
+          />
+          <p class="faq-info">
+            If an entry for a user is found in “Applicants”, they’d only need to
+            fill out Step 2 next. <br> Manually enroll user: <br/>For Step 1:
+          </p>
+          <p id="indent" class="faq-info">
+            Go to:
+            <a href="https://haloexams.com/nmiadmin/users/applicant/add/"
+              >Here</a
+            ><br />You will need information from the user to fill out all the
+            fields including pictures.<br>• Make sure photos adhere to guidelines as
+            we are manually uploading them. <br>• Submit the form when you have all
+            the information.
+          </p>
+          <p class="faq-info">
+            For Step 2: <br>
+            Make sure that Step 1 is complete by searching for the user's
+            application in the “Applicants” section. <br> 
+            • Go to “Users” on the Admin
+            portal and click “Add”
+          </p>
+          <img
+            src="faq_images/Add-user.png"
+            alt="Applicants admin portal"
+            class="faq-image"
+          />
+          <p class="faq-info">
+            • Fill out the information for the new user, set username as the email
+            user in their User Information application (Step 1). <br />• Add a
+            password that will be provided to the user. <br />• Hit Submit to add
+            a user on HALO.<br />• Next, go to “User - Face Verification Images”
+            to add the user’s registration headshot.
+          </p>
+          <img
+            src="faq_images/user-face.png"
+            alt="Applicants admin portal"
+            class="faq-image"
+          />
+          <p class="faq-info">
+            • Select the user we just added by looking for their name and email
+            id.<br />• For the image field, go to the user’s application in
+            “Applicants” and find the <br>  picture labeled “Passport Photo” and
+            download it.
+          </p>
+          <img
+            src="faq_images/passport-id.png"
+            alt="Applicants admin portal"
+            class="faq-image"
+          />
+          <p class="faq-info">
+            • Upload the above picture into the image field in “User - Face
+            Verification Images”.<br>• Hit “Save”<br>
+            • User has been successfully registered. Now you may provide them with
+            the username and password to ‘Login’ to HALO Exams
+            <a href="https://haloexams.com/login/">Here</a>
+          </p>
+        </div>
+      </div>
+      <div id="Register_Fail" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title"> First Step of Registration Issues: </p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+             If the User is unnable to submit the first step of their Registration Application.</p>
+            <p class="faq-info">
+              • This is most likely an issue with the documents they have tried to upload. <br>
+              • Please Access the admin portal on HALO to check the User's applicant model <br>
+              ‏‏‎‏‏‎ ‎‏‏‎ ‎‏‏‎‏‏<br> Look though the application to see if the photo they have uploaded is either
+              poor quality, <br> ‏‏‎ ‎‏‏‎‏‏‎ ‎‏‏‎‏or the wrong photo altogether.
+            </p>
+        </div>  
+      </div>
+      <div id="Face_Detect_Fail" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title"> Face Detection Failure: </p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+             If the User is unnable to be recognized by the face detection step, please ask if they are wearing any Hats, Sunglasses or anything obstructing their face and to please remove them.</p>
+            <p class="faq-info">
+             This could also be an issue involving the background of the User's environment as it could be hard for the camera to focus on the User.  <br> <br>
+              • Please Ask the User if they could try again, facing against a blank wall this time <br>
+            </p>
+        </div>  
+      </div>
+    </main>
+    <script>
+      var myInput = document.getElementById("myInput")
+      var Button = document.getElementById("btn")
+      autocomplete(document.getElementById("myInput"), Reg_terms);
+      function findString(text) { window.find(text);}
+      myInput.addEventListener("keyup", ({key}) => {
+      if (key === "Enter") {findString(myInput.value)}})
+    </script>
+  </body>
+</html>

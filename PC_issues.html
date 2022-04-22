@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous"/>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="faq_tech_support.css"/>
+    <script src="faq_main.js"></script>
+    <title>FAQ Tech Support</title>
+  </head>
+  <body>
+    <form class="search_wrap" autocomplete="off" action="">
+      <div class="autocomplete">
+        <input id="myInput" type="search" name="myCountry" placeholder="Search Terms...">
+        <button type="button" onclick="findString(myInput.value)" id="btn" class="btn">
+          <span class="fas fa-search"></span>
+        </button>
+      </div>
+    </form>
+    <nav class="breadcrumb">
+      <a class="Img-wrap" href="faq_HALO.html"><img class="HALO" src="faq_images/favicon3.png" alt="HALO Icon"></a>
+      <ul>
+        <p class="TOC">Table of Contents</p>
+        <li><a class="TOC_Space" href="faq_NEMO.html">NEMO</a></li>
+      </ul>
+      <div class="dropdown">
+        <a href="registration.html"><button class="dropbtn">Registration</button></a>
+        <div class="dropdown-content">
+          <a href="#Registration_Page">Register a User</a>
+          <a href="#Register_Fail">First Step of Registration</a>
+          <a href="#Face_Detect_Fail">Face Detection Failure</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="user_issues.html"><button class="dropbtn">User Issues</button></a> 
+        <div class="dropdown-content">
+          <a href="#Exam_Resume">Resume an Exam For User</a>
+          <a href="#Exam_Delete">Delete an Exam Attempt</a>
+          <a href="#Exam_Attempts">Find User Exam Attempt</a>
+          <a href="#Password_Reset">Resetting User Password</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="Pre_exam_issues.html"><button class="dropbtn">Pre - Exam Issues</button></a>
+        <div class="dropdown-content">
+          <a href="#Pre_Scan">Pre-environment Scan</a>
+          <a href="#App_issues">App or Browser Related Issues</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="Mac_issues.html"> <button class="dropbtn">Mac / Apple Issues</button></a>
+        <div class="dropdown-content">
+            
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="PC_issues.html"> <button class="dropbtn">Windows / PC Issues</button></a>
+        <div class="dropdown-content">
+            <a href="#Perm_issue">Windows Permission Issue</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="Exam_Issues.html"><button class="dropbtn">During Exam</button></a> 
+        <div class="dropdown-content">
+          <a href="#Camera_Issues">Camera Permissions</a>
+          <a href="#Exam_Dropdown">Exam Missing in Dropdown</a>
+          <a href="#Exam_Freeze">Exam Freeze</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="Email_templates.html"> <button class="dropbtn">Email Templates</button></a>
+        <div class="dropdown-content">
+          <a href="#Email_Template">User Invalid ID Email</a>
+          <a href="#Email_Password">Password reset Email</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Video Examples <em>(Dated)</em></button>
+        <div class="dropdown-content">
+          <a target="_blank" href="https://www.dropbox.com/s/ji7f0wsp7v7sdg8/Halo%20-%20Build%20Question%20Banks.mp4?dl=0">Creating HALO Exam</a>
+          <a target="_blank" href="https://northeastmaritime.monday.com/boards/140645215/pulses/899485963/posts/859958364">Adding Exam to HALO</a>
+          <a target="_blank" href="https://www.dropbox.com/s/iwssuljjt8mwfs4/HALO%20Exams%20-Enrolling%20a%20Student%20Into%20an%20Exam%20.mp4?dl=0">Enrolling Users in Exams</a>
+        </div>
+      </div>
+      <div class="Padding">
+        <div class="far fa-question-circle" id="tooltip">
+          <span id="tooltiptext">
+            Clicking on one of the grey Headers above will direct you to its specific page. While on this page you can use the dropdown menu provided when hovering over a grey header, to navigate through specific sections of the page.    </span>
+        </div>
+       </div>
+    </nav>
+    <main class="main">
+      <header class="faq-header">Windows / PC Issues</header>
+      <div id="Perm_issue" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">Permissions Issue</p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+            User's may encounter a problem where it does not allow them access to their camera or microphone on a Windows / PC.
+          </p>
+          <p class="faq-info">
+            Advise the user to follow these steps if they need to allow permissions on their PC.
+          </p>
+          <p class="faq-info">
+            ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎• Navigate to the windows Icon in the bottom left corner of your screen. <br>
+            ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎• Select the Settings Icon, then navigate to the Privacy tab. <br>
+            ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎• On the left side of the settings is a table, scroll down to the Camera/Microphone sections.
+            ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ <br> <br>
+            Make sure that Camera and desktop app microphone permissions are both allowed.
+          </p>
+        </div>
+      </div>
+      
+    </main>
+    <script>
+      var myInput = document.getElementById("myInput")
+      autocomplete(document.getElementById("myInput"), Exam_terms);
+      function findString(text) { window.find(text);}
+      myInput.addEventListener("keyup", ({key}) => {
+      if (key === "Enter") {findString(myInput.value)}})
+    </script>
+  </body>
+</html>

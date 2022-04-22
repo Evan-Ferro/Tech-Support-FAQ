@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="faq_tech_support.css" />
+    <script src="faq_main.js"></script>
+    <title>NEMO FAQ</title>
+    <link rel="shortcut icon" href="faq_images/favicon3.png">
+  </head>
+  <body>
+    <form class="search_wrap" autocomplete="off" action="">
+      <div class="autocomplete">
+        <input id="myInput" type="search" name="myCountry" placeholder="Search Terms...">
+        <button type="button" onclick="findString(myInput.value)" id="btn" class="btn">
+          <span class="fas fa-search"></span>
+        </button> 
+      </div>
+    </form>
+    <nav class="breadcrumb">
+      <a class="Img-wrap" href="faq_NEMO.html"><img class="HALO-two" src="faq_images/NEMO Logo 2019.png" alt="HALO Icon"></a>
+      <ul class="Top-info">
+        <p class="TOC">Table of Contents</p>
+        <li><a class="TOC_Space" href="faq_HALO.html">HALO°</a></li>
+      </ul>
+      <div class="dropdown">
+       <a href="Enrolling_Users.html"> <button class="dropbtn">Enrolling Users</button></a>
+        <div class="dropdown-content">
+          <a href="#Course_Enroll">How to enroll in a course</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="Simulators.html"> <button class="dropbtn">Simulator Issues</button></a>
+         <div class="dropdown-content">
+           <a href="#Ipad_Sim">Simulator isn't working on my Ipad?</a>
+         </div>
+      </div>
+      <div class="dropdown">
+       <a href="Password_issues.html"> <button class="dropbtn">Password Issues</button></a>
+        <div class="dropdown-content">
+          <a href="#Password_Reset">Reset user password</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="Course_Problems.html"> <button class="dropbtn">Course Problems</button></a>
+        <div class="dropdown-content">
+          <a href="#Find_Courses">Where to find courses</a>
+          <a href="#Not_Complete">Course module not completing</a>
+          <a href="#Blank_Course">Blank window trying to open course</a>
+        </div>
+      </div>
+      <div class="Padding">
+      <div class="far fa-question-circle" id="tooltip">
+        <span id="tooltiptext">Clicking on one of the grey Headers above will direct you to its specific page. While on this page you can use the dropdown menu provided when hovering over a grey header, to navigate through specific sections of the page.    </span>
+      </div>
+     </div>
+    </nav>
+    <main id="main_search" class="main">
+        <header class="faq-header">NEMO FAQ Page</header>
+        <div id="Course_Enroll" class="faq-contain">
+          <div class="faq-content">
+            <p class="faq-title"> How to enroll in a course: </p>
+            <p class="version">Version 1.0</p>
+            <p class="faq-info">
+              • Go to <a href="https://northeastmaritimeonlinecourses.com/">NEMO</a> and click on "Browse Courses" <br> 
+              ‎‏‏‎   ‎‏‏‎  ‎‏‏‎  ‎‏‏‎   ‎‏‏‎  ‎‏‏‎  ‎‏‏‎ If you are looking for international courses – click “STCW Courses” <br>
+              ‎‏‏‎   ‎‏‏‎  ‎‏‏‎  ‎‏‏‎  ‎‏‏‎  ‎‏‏‎  ‎‏‏‎  If you are looking for USCG courses - “click U.S. Coast Guard Approved Courses” </p>
+            <p class="faq-info">• All courses listed are available for purchase by clicking on the yellow price button</p>
+          </div>
+        </div>
+        <div id="Ipad_Sim" class="faq-contain">
+          <div class="faq-content">
+            <p class="faq-title"> Why isn't the simulator working on my Ipad?  </p>
+            <p class="version">Version 0.0</p>
+            <p class="faq-info">If a user is unable to access a certain Simulator on NEMO this is mostly because of the device they are using.</p>
+            <p class="faq-info">
+              Some of the older Simulators such as Handheld VHF, VHF & MFHF may allow users to access through ipad or other mobile devices.</p>
+            <p class="faq-info">But as for the more recent simulators like Radar, Sextant etc... they should not be able to use them. <br> 
+              • Please advise to the user that they should switch to a PC if possible and apologize for the inconvenience</p>
+          </div>  
+        </div>
+        <div id="Password_Reset" class="faq-contain">
+          <div class="faq-content">
+            <p class="faq-title"> How do I reset my password? </p>
+            <p class="version">Version 1.0</p>
+            <p class="faq-info">
+              • If you have forgotten your NEMO password: <br>
+              ‎‏‏‎  ‎‏‏‎   ‎‏‏‎‎‏‏‎  ‎‏‏‎   ‎‏‏‎‎‏‏‎  ‎‏‏‎   ‎‏‏‎‎‏‏‎‎‏‏‎    ‎‏‏‎go to <a href="https://northeastmaritimeonlinecourses.com/">NEMO</a> and click on the yellow <br> ‎‏‏‎  ‎‏‏‎   ‎‏‏‎  ‎‏‏‎   ‎‏‏‎  ‎‏‏‎  “Sign In” button in the top right-hand corner of your screen. </p>
+            <p class="faq-info">
+              • Click “Forgot Password” 
+            </p>
+            <img
+            src="faq_images/Forgot_Password.png"
+            alt="Applicants admin portal"
+            class="faq-image"/>
+            <p class="faq-info">• Enter your username or email address associated with your NEMO account. <br> 
+              ‎‏‏‎  ‎‏‏‎   ‎‏‏‎  ‎‏‏‎  ‎‏‏‎  ‎‏‏‎  ‎‏‏‎   ‎‏‏‎‎‏‏‎You will then receive an email with steps on resetting your password. 
+            </p>
+            <p class="faq-info">• If you do not see this email, please check your spam folder.</p>
+          </div>  
+        </div>
+        <div id="Find_Courses" class="faq-contain">
+          <div class="faq-content">
+            <p class="faq-title">Where do I find my courses on NEMO? </p>
+            <p class="version">Version 1.0</p>
+            <p class="faq-info">
+              • Go to <a href="https://northeastmaritimeonlinecourses.com/">NEMO</a> and click on yellow “Sign In” button in the top right-hand corner of your screen. </p> 
+              ‎‏‏‎  ‎‏‏‎  ‎‏‏‎  ‎‏‏‎• Click on “My Courses” in the center of your course dashboard. <br>
+             ‎‏‏‎  ‎‏‏‎   ‎‏‏‎  ‎‏‏‎  ‎‏‏‎  ‎‏‏‎  ‎‏‏‎  All of your courses will show up in their respective categories here. 
+            </p>
+          </div>
+        </div>
+        <div id="Not_Complete" class="faq-contain">
+          <div class="faq-content">
+            <p class="faq-title">My course module is not being marked as “Complete” after I’ve finished it, what do I do? </p>
+            <p class="version">Version 1.0</p>
+            <p class="faq-info">
+              •	If you have completed a module within your course and it is still showing “In Progress”, <br>
+              ‎‏‏‎  ‎‏‏‎  ‎‏‏‎please make sure you are using Google Chrome if possible as this is <br>
+              ‎‏‏‎  ‎‏‏‎  ‎‏‏‎the preferred web browser for all NEMO courses.
+            </p>
+            <p class="faq-info">
+              • Whenever you exit a course module, <br>
+              ‎‏‏‎    ‎‏‏‎    ‎‏‏‎ make sure you are clicking the yellow [X] in the top-right corner.
+            </p>
+            <p class="faq-info">
+              • If you have refreshed the page and followed these tips and it is still not being marked as <br> 
+              ‏‏‎    ‎‏‏‎ “Complete”, please email <a href="mailto:techsupport@northeastmaritime.com">Tech Support</a> or call our office to be assisted. 
+            </p>
+          </div>
+        </div>
+        <div id="Blank_Course" class="faq-contain">
+          <div class="faq-content">
+            <p class="faq-title">There is a blank window popping up when I try to open my course, what do I do? </p>
+            <p class="version">Version 1.0</p>
+            <p class="faq-info">
+              • If there is a blank window popping up, please make sure you are using Google Chrome <br>
+              ‎‏‏‎    ‎‏‏‎    ‎‏‏‎ if possible as this is the preferred web browser for all NEMO courses.  
+            </p>
+            <p class="faq-info">
+              • If you have refreshed the page and it continues to appear as a blank screen, <br>
+              ‎‏‏‎    ‎‏‏‎    ‎‏‏‎  please email <a href="mailto:techsupport@northeastmaritime.com">Tech Support</a> or call our office to be assisted.   
+            </p>
+          </div>
+        </div>
+    </main>
+    <script>
+      var myInput = document.getElementById("myInput")
+      autocomplete(document.getElementById("myInput"), NEMO_terms);
+      function findString(text) { window.find(text);}
+      myInput.addEventListener("keyup", ({key}) => {
+      if (key === "Enter") {findString(myInput.value)}})
+    </script>
+  </body>
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="faq_tech_support.css"/>
+    <script src="faq_main.js"></script>
+    <title>HALO° FAQ</title>
+    <link rel="shortcut icon" href="faq_images/favicon3.png">
+  </head>
+  <body>
+    <form class="search_wrap" autocomplete="off" action="">
+      <div class="autocomplete">
+        <input id="myInput" type="search" name="myCountry" placeholder="Search Terms...">
+        <button type="button" onclick="findString(myInput.value)" id="btn" class="btn">
+          <span class="fas fa-search"></span>
+        </button> 
+      </div>
+    </form>
+    <nav class="breadcrumb">
+      <a class="Img-wrap" href="faq_HALO.html"><img class="HALO" src="faq_images/favicon3.png" alt="HALO Icon"></a>
+      <ul class="Top-info">
+        <p class="TOC">Table of Contents</p>
+        <li><a class="TOC_Space" href="faq_NEMO.html">NEMO</a></li>
+      </ul>
+      <div class="dropdown">
+       <a href="registration.html"> <button class="dropbtn"> Registration </button></a>
+        <div class="dropdown-content">
+          <a href="#Registration_Page">Register a User</a>
+          <a href="#Register_Fail">First Step of Registration</a>
+          <a href="#Face_Detect_Fail">Face Detection Failure</a>
+        </div>
+      </div>
+      <div class="dropdown">
+       <a href="user_issues.html"> <button class="dropbtn">User Issues</button></a>
+        <div class="dropdown-content">
+          <a href="#Exam_Resume">Resume an Exam For User</a>
+          <a href="#Exam_Delete">Delete an Exam Attempt</a>
+          <a href="#Exam_Attempts">Find User Exam Attempt</a>
+          <a href="#Password_Reset">Resetting User Password</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="Pre_exam_issues.html"> <button class="dropbtn">Pre - Exam Issues</button></a>
+        <div class="dropdown-content">
+          <a href="#Pre_Scan">Pre-environment Scan</a>
+          <a href="#App_issues">App or Browser Related Issues</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="Mac_issues.html"> <button class="dropbtn">Mac / Apple Issues</button></a>
+        <div class="dropdown-content">
+          
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="PC_issues.html"> <button class="dropbtn">Windows / PC Issues</button></a>
+        <div class="dropdown-content">
+            <a href="#Perm_issuee">Windows Permission Issue</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="Exam_Issues.html"> <button class="dropbtn">During Exam</button></a>
+        <div class="dropdown-content">
+          <a href="#Camera_Issues">Camera Permissions</a>
+          <a href="#Exam_Dropdown">Exam Missing in Dropdown</a>
+          <a href="#Exam_Freeze">Exam Freeze</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="Email_templates.html"> <button class="dropbtn">Email Templates</button></a>
+        <div class="dropdown-content">
+          <a href="#Email_Template">User Invalid ID Email</a>
+          <a href="#Email_Password">Password reset Email</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Video Examples <em>(Dated)</em></button>
+        <div class="dropdown-content">
+          <a target="_blank" href="https://www.dropbox.com/s/ji7f0wsp7v7sdg8/Halo%20-%20Build%20Question%20Banks.mp4?dl=0">Creating HALO Exam</a>
+          <a target="_blank" href="https://northeastmaritime.monday.com/boards/140645215/pulses/899485963/posts/859958364">Adding Exam to HALO</a>
+          <a target="_blank" href="https://www.dropbox.com/s/iwssuljjt8mwfs4/HALO%20Exams%20-Enrolling%20a%20Student%20Into%20an%20Exam%20.mp4?dl=0">Enrolling Users in Exams</a>
+        </div>
+      </div>
+      <div class="Padding">
+      <div class="far fa-question-circle" id="tooltip">
+        <span id="tooltiptext">Clicking on one of the grey Headers above will direct you to its specific page. While on this page you can use the dropdown menu provided when hovering over a grey header, to navigate through specific sections of the page.    </span>
+      </div>
+     </div>
+    </nav>
+    <main class="main">
+      <header class="faq-header">HALO° FAQ Page</header>
+      <div id="Registration_Page" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">Registration:</p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+            Registration is a 2-step process:
+          </p>
+          <p id="indent" class="faq-info">
+            Step 1: User Information Application <a href="https://haloexams.com/users/NEMOApplication/ ">Here</a> <br>
+          </p>
+          <p id="indent" class="faq-info">
+            Step 2: Register for an Account on HALO <a href="https://haloexams.com/registerNEMO/">Here</a> <br>
+            Submissions from Step 1 can be found on “Applicants” in the Admin
+            portal.
+          </p>
+          <img
+            src="faq_images/Registration-faq.png"
+            alt="Applicants admin portal"
+            class="faq-image"
+          />
+          <p class="faq-info">
+            If an entry for a user is found in “Applicants”, they’d only need to
+            fill out Step 2 next. <br> Manually enroll user: <br/>For Step 1:
+          </p>
+          <p id="indent" class="faq-info">
+            Go to:
+            <a href="https://haloexams.com/nmiadmin/users/applicant/add/"
+              >Here</a
+            ><br />You will need information from the user to fill out all the
+            fields including pictures.<br>• Make sure photos adhere to guidelines as
+            we are manually uploading them. <br>• Submit the form when you have all
+            the information.
+          </p>
+          <p class="faq-info">
+            For Step 2: <br>
+            Make sure that Step 1 is complete by searching for the user's
+            application in the “Applicants” section. <br> 
+            • Go to “Users” on the Admin
+            portal and click “Add”
+          </p>
+          <img
+            src="faq_images/Add-user.png"
+            alt="Applicants admin portal"
+            class="faq-image"
+          />
+          <p class="faq-info">
+            • Fill out the information for the new user, set username as the email
+            user in their User Information application (Step 1). <br />• Add a
+            password that will be provided to the user. <br />• Hit Submit to add
+            a user on HALO.<br />• Next, go to “User - Face Verification Images”
+            to add the user’s registration headshot.
+          </p>
+          <img
+            src="faq_images/user-face.png"
+            alt="Applicants admin portal"
+            class="faq-image"
+          />
+          <p class="faq-info">
+            • Select the user we just added by looking for their name and email
+            id.<br />• For the image field, go to the user’s application in
+            “Applicants” and find the <br>  picture labeled “Passport Photo” and
+            download it.
+          </p>
+          <img
+            src="faq_images/passport-id.png"
+            alt="Applicants admin portal"
+            class="faq-image"
+          />
+          <p class="faq-info">
+            • Upload the above picture into the image field in “User - Face
+            Verification Images”.<br>• Hit “Save”<br>
+            • User has been successfully registered. Now you may provide them with
+            the username and password to ‘Login’ to HALO Exams
+            <a href="https://haloexams.com/login/">Here</a>
+          </p>
+        </div>
+      </div>
+      <div id="Register_Fail" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title"> First Step of Registration Issues: </p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+             If the User is unnable to submit the first step of their Registration Application.</p>
+            <p class="faq-info">
+              • This is most likely an issue with the documents they have tried to upload. <br>
+              • Please Access the admin portal on HALO to check the User's applicant model <br>
+              ‏‏‎‏‏‎ ‎‏‏‎ ‎‏‏‎‏‏<br> Look though the application to see if the photo they have uploaded is either
+              poor quality, <br> ‏‏‎ ‎‏‏‎‏‏‎ ‎‏‏‎‏or the wrong photo altogether.</p>
+        </div>  
+      </div>
+      <div id="Face_Detect_Fail" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title"> Face Detection Failure: </p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+             If the User is unnable to be recognized by the face detection step, please ask if they are wearing any Hats, Sunglasses or anything obstructing their face and to please remove them.</p>
+            <p class="faq-info">
+             This could also be an issue involving the background of the User's environment as it could be hard for the camera to focus on the User.  <br> <br>
+              • Please Ask the User if they could try again, facing against a blank wall this time <br>
+            </p>
+        </div>  
+      </div>
+      <div id="Exam_Freeze" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">Exam Freeze Issue:</p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+            • Ask the user to click on "Exam Center" and then click on “Leave"
+            when prompted if they would like to exit the exam. <br>• Once on the
+            Exam Center, instruct the user to find their exam and click “Open”.
+            <br>
+            • Click "Continue Exam" and it should bring them back to the same
+            question they were on when they got stuck.
+          </p>
+          <p class="faq-info">
+            Advise the user to follow these steps if their exam were to freeze
+            again.
+          </p>
+        </div>
+      </div>
+      <div id="Exam_Attempts" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title"> Find User Exam Attempt:</p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+            • To delete an exam attempt and let the user restart an attempt, go to
+            the user’s exam attempt on the “User Stats” page. <br />• Look up the
+            exam attempt by using the Filter/Search function on the page.<br />
+            • Click on “View Details” for the respective exam.
+          </p>
+          <p class="faq-info">
+            Confirm the attempt number of the exam and other details.
+          </p>
+        </div>
+      </div>
+      <div id="Exam_Delete" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">Delete an Exam Attempt to allow Retake:</p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+            This feature can be used to provide another attempt of an exam by
+            deleting an attempt
+          </p>
+          <p class="faq-info">
+            • Navigate to a User’s exam attempt as explained above. <br />• Scroll
+            all the way to the bottom and click “Delete Exam” <br />
+            • The user can now restart the exam and it will start from the
+            beginning.
+          </p>
+        </div>
+      </div>
+      <div id="Exam_Resume" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">Resume an Exam For User:</p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+            • Navigate to a User’s exam attempt as explained in <em>"Find User Exam Attempt"</em> <br >• Click the
+            “Resume Exam” green colored button to: <br >
+            ‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎Unblock the user <br >‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎Reset the exam so violations are removed
+            <br />
+            ‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎Give the user the ability to resume the exam
+          </p>
+          <p class="faq-info">
+            • Please ask the user to go back to the “Exam Center” and start their
+            exam again. <br> •  This action can only be done if the time for the exam has not
+            passed.
+          </p>
+        </div>
+      </div>
+      <div id="Password_Reset" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">Resetting User Password:</p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+            If a user is having trouble resetting their password:
+          </p>
+          <p class="faq-info">
+            • Suggest the user to check their spam folder for an email by HALO
+            Exams that says “Password Reset” <br >
+            •  Check the “Sent” emails in
+            <a href="https://haloexams.com/support/">help@halo-exams.com’s</a>
+            mailbox for the user’s password reset email. <br >
+            •  If found, forward it to the user again. It should typically get into
+            their inbox this time.
+          </p>
+        </div>
+      </div>
+      <div id="App_issues" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">App or Browser Related Issues</p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+            • If there are any issues that you’re not sure how to handle, ask the
+            user what computer(Windows or Mac) AND which browser are they using.
+          </p>
+          <p class="faq-info">
+            • After making sure that the user is NOT on a mobile/Ipad, ask the
+            user to close the app and to open Google Chrome.
+          </p>
+          <p class="faq-info">
+            • On Chrome, going to www.haloexams.com and logging in should direct
+            the user towards their exams..
+          </p>
+          <p class="faq-info">
+            • To confirm, you may ask the user to tell you what it says against
+            “Browser Detected” on the exam details screen:
+          </p>
+          <img
+            src="faq_images/Browser-help.png"
+            alt="Applicants admin portal"
+            class="faq-image"
+          />
+        </div>
+      </div>
+      <div id="Exam_Dropdown" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">Exam Missing in Dropdown Menu:</p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">If the User is unable to view their Exam in the "Request an Exam" Dropdown Menu  <br/>Inside of their Exam Center</p>
+          <p class="faq-info">
+            • This is most likely a simple code change to implement the specific Exam into the Dropdown<br/>
+            ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ Please alert (Multimedia@northeastmaritime.com) <br> 
+            ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‎‏‏‎ ‎‏ as soon as possible so we can resolve this issue
+          </p>
+          <p class="faq-info">
+            Advise the user to please allow the changes to be made and to refresh their webpage afterward. 
+          </p>
+        </div>
+      </div>
+      <div id="Pre_Scan" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">Pre - environment Scan:</p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+            If the user has completed their pre-environment scan,<br>
+            and is waiting for the process to complete for more than 15 minutes.<br>
+            • Ask the user what type of internet connection they are on <br>
+            ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ If the user is on a Satellite / Vessel connection Inform them they should try this process again
+          </p>
+          <p class="faq-info">
+            ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ If the user is on a wired connection  <br>
+           Advise the user to please refresh the page, they may need to wait a minute.
+          </p>
+        </div>
+      </div>
+      <div id="Camera_Issues" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">Camera Permissions / Video Upload Limbo:</p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+            If a user encounters the issue where their camera is unable to upload any video to HALO Exam screening.
+          </p>
+          <p class="faq-info">
+            • Ask the user what computer (Windows or Mac) they are using. <br> 
+            • Also, ask the student if they are using the stand alone app or if they are on a browser <br>
+            • If the user Is currently taking the Exam on a vessel with unreliable Bandwidth / Internet Connection, 
+            ‎‏‏‎ ‎‏‏‎ ‎‏‏‎this is most likely the problem.
+          </p>
+        </div>
+      </div>
+      <div id="Email_Template" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">Email Templates:</p>
+          <br/>
+          <p class="faq-title">HALO° User Invalid ID Email Template:</p>
+          <p class="faq-info">Hi {StudentName},</p>
+          <p class="faq-info">
+            Our records indicate that you did not upload a valid photo ID during
+            your registration on HALO Exams. It shows that the headshot has been
+            uploaded twice.
+          </p>
+          <p class="faq-info">
+            Please send over a valid photo ID (driver's license, state ID or
+            passport) to this email, and we will update your profile on HALO.
+            Please be aware that we won't be able to proceed with approval of
+            your exams without the photo ID as part of your profile. This is
+            mainly because the exam is taken online, and we need to verify the
+            identity of the individual taking the exam for compliance and
+            issuance of any license(s).
+          </p>
+          <p class="faq-info">Please let us know if you have any questions.</p>
+          <p class="faq-info">HALO Education Systems</p>
+        </div>
+      </div>
+      <div id="Email_Password" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">Password Reset Email:</p>
+          <p class="faq-info">
+            Find the user’s password reset email in the Sent folder and forward
+            the email again to the user. <br><br>It is possible that they have it in
+            their Spam folder, but manually re-sending the email ends up in
+            their inbox. ‎‏‏‎ ‎‏‏‎  <em>Example Email Below</em> <br> <br> Hello Tom,
+          </p>
+          <p class="faq-info">
+            I have manually forwarded the password reset email that you
+            requested. The original email may have gone into your spam folder,
+            so if you ever need a password reset in the future I would check
+            there if you cannot find the email.
+          </p>
+          <p class="faq-info">
+            If there is anything else we can help you with, please let us know.
+          </p>
+          <p class="faq-info">
+            Thank you, <br>
+            HALO Education Systems
+          </p>
+        </div>
+      </div>
+    </main>
+    <script>
+      var myInput = document.getElementById("myInput")
+      autocomplete(document.getElementById("myInput"), HALO_terms);
+      function findString(text) { window.find(text);}
+      myInput.addEventListener("keyup", ({key}) => {
+      if (key === "Enter") {findString(myInput.value)}})
+    </script>
+  </body>
+</html>
