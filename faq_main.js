@@ -6,12 +6,13 @@ var Pre_terms = ["App or Browser Related Issues", "Pre-environment Scan"]
 var Exam_terms = ["User Invalid ID Email", "Password Reset Email",  "Camera Permissions", "Exam Missing in Dropdown", "Exam Freeze"]
 var Reg_terms = ["Registration", "Face Verification", "Passport", "First Step of Registration"]
 var Email_terms = ["Password Reset Email", "User Invalid ID Email"]
-var NEMO_terms = ["How to enroll in a course", "How do I reset my password", "Where do I find my courses", "My course module is not being marked as “Complete”", "There is a blank window popping up when I try to open my course", "Why isn't the simulator working on my Ipad?"]
+var NEMO_terms = ["How to enroll in a course", "How do I reset my password", "Where do I find my courses", "My course module is not being marked as “Complete”", "There is a blank window popping up when I try to open my course", "Why isn't the simulator working on my Ipad?",
+"Can I take my course on a tablet or mobile device?", "My course requires me to upload an assignment or document"]
 var Enroll_terms = ["How to enroll in a course"]
 var Password_terms = ["How do I reset my password"]
 var Course_terms = ["Where do I find my courses", "My course module is not being marked as “Complete”", "There is a blank window popping up when I try to open my course"]
 var Simulator_terms = ["Why isn't the simulator working on my Ipad?"]
-var Device_terms = ["Course on Tablet"]
+var Device_terms = ["Can I take my course on a tablet or mobile device?"]
 var Uploading_terms = ["My course requires me to upload an assignment or document"] 
 
 function autocomplete(inp, arr) {
