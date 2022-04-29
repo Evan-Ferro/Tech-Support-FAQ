@@ -10,7 +10,7 @@
     }
 
     .main{
-        margin-left: 10rem !important;
+        margin-left: 12rem !important;
     }
 }
 @media only screen and (max-width: 1200px) {
@@ -19,17 +19,24 @@
         font-size: 1.3rem !important;
     }
 }
-@media only screen and (max-width: 1220px) {
+@media only screen and (max-width: 1180px) {
     .TOC_Space{
         padding: 0.4rem !important;
         font-size: 1.3rem !important;
     }
     .faq-header{
-        margin-top: 5.8rem !important;
-        color: black !important;
+        color: white !important;
+        font-size: 2rem !important;
+        margin-top: 1.5rem !important;
     }
     .faq-content{
-        margin-top: 6rem !important;
+        font-size: 1rem !important;
+    }
+    input{
+        font-size: 1rem !important;
+    }
+    .top-contents-wrap{
+        margin-left: 30% !important;
     }
 }
 @media only screen and (max-width: 1100px) {
@@ -39,6 +46,21 @@
       flex-wrap: wrap;
       width: 100%;
       overflow: hidden;
+    }
+}
+@media only screen and (max-width: 810px) {
+    .faq-header{
+        color: white !important;
+        font-size: 1.4rem !important;
+    }
+    .faq-content{
+        font-size: 1rem !important;
+    }
+    input{
+        font-size: 1rem !important;
+    }
+    .top-contents-wrap{
+        margin-left: 1% !important;
     }
 }
 @media only screen and (max-width: 1100px) {
@@ -265,9 +287,15 @@ img {
 .autocomplete {
     position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
-    height: 2.5rem;
+    height: 2.6rem;
     font-size: 1.8rem;
+}
+
+::placeholder{
+    color: white;
 }
 
 ::selection{
@@ -276,14 +304,15 @@ img {
 
 span{
     position: relative;
-    padding: 2.8px;
+    padding: 7.8px;
 }
 
 form{
     position: fixed;
     display: flex;
     justify-content: left;
-    border: 2px solid white;
+    border: 1.1px solid white;
+    border-radius: 2px;
     right: 2%;
     margin-top: -3.4rem;
     box-shadow: 3px 4px 3px rgb(1 1 2 / 20%), 3px 4px 3px rgb(1 1 2 / 20%);
@@ -294,10 +323,10 @@ form{
     display: flex;
     align-items: center;
     cursor: pointer;
-    background-color: #162c53;
+    background-color: #1b263a;
     color: white;
     border: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     transform: translate(0.90);
     z-index: 1;
 }
@@ -311,20 +340,14 @@ form{
     color: black;
 }
 
-input:hover{
-    background-color: #fff;
-    color: black;
-    opacity: 0.8;
-}
-
 input{
     background-color: #1d3a6bbe;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     border: none;
     height: 1rem;
     outline: none;
-    border-right: 5px solid white;
+    border-right: 2px solid white;
     font-family: 'roboto';
     padding-left: 0.3rem;
     padding: 1.3rem;
@@ -582,7 +605,7 @@ input[type=submit] {
 }
 
 .top-contents-wrap{
-    margin-left: 34%;
+    margin-left: 28%;
 }
 
 
