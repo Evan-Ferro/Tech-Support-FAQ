@@ -11,6 +11,8 @@ var Enroll_terms = ["How to enroll in a course"]
 var Password_terms = ["How do I reset my password"]
 var Course_terms = ["Where do I find my courses", "My course module is not being marked as “Complete”", "There is a blank window popping up when I try to open my course"]
 var Simulator_terms = ["Why isn't the simulator working on my Ipad?"]
+var Device_terms = ["Course on Tablet"]
+var Uploading_terms = ["My course requires me to upload an assignment or document"] 
 
 function autocomplete(inp, arr) {
     var currentFocus;
