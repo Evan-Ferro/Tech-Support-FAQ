@@ -1,7 +1,6 @@
 @media only screen and (max-width: 800px) {
     body {
-      display: flex;
-      flex-direction: column;
+      display: block;
       flex-wrap: wrap;
     }
 
@@ -11,7 +10,26 @@
     }
 
     .main{
-        margin-left: 9rem !important;
+        margin-left: 10rem !important;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .TOC_Space{
+        padding: 0.4rem !important;
+        font-size: 1.3rem !important;
+    }
+}
+@media only screen and (max-width: 1220px) {
+    .TOC_Space{
+        padding: 0.4rem !important;
+        font-size: 1.3rem !important;
+    }
+    .faq-header{
+        margin-top: 5.8rem !important;
+        color: black !important;
+    }
+    .faq-content{
+        margin-top: 6rem !important;
     }
 }
 @media only screen and (max-width: 1100px) {
@@ -32,16 +50,19 @@
 
 html {
     scroll-behavior: smooth;
+    min-width: 700px;
 }
 
 body {
     /*background-image: linear-gradient(50deg, #5a5b669c, #788a9683);*/
-    background-color: rgb(252, 252, 252);
+    /* background-color: rgb(252, 252, 252); */
+    background-color: rgba(231, 233, 235, 0.856);
     font-family: "Segoe UI", sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     margin: 0;
     padding: 0;
     font-weight: 500;
     line-height: 1;
+    margin-top: 0;
 }
 
 .main {
@@ -49,16 +70,14 @@ body {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 7rem;
-    margin-top: 2rem;
-    /*border: 2px solid #b6c1cc;
-    box-shadow: 3px 4px 13px rgb(1 1 2 / 20%), 3px 4px 13px rgb(1 1 2 / 20%);*/
-    background-color: rgb(250, 250, 250);
+    margin-top: 4.5rem;
     line-height: 1.3;
     font-family: "Segoe UI", sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .TOC{
     margin: 0;
+    color: white;
     padding: 2px 0px 8px 0px;
     font-weight: 600;
     text-align: center;
@@ -82,9 +101,69 @@ body {
 }
 
 .TOC_Space{
-    padding: 8px 0px 0px 0px;
+    padding: 0.8rem;
     justify-content: center;
     display: flex;
+    border: 2px solid gray;
+}
+
+.nemoBtn{
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-color: #172b50;
+}
+
+.nemoBtn:hover{
+    background-color: #213761;
+    box-shadow: rgba(192, 194, 194, 0.12) 0px 2px 4px 0px, rgba(170, 171, 172, 0.32) 0px 2px 16px 0px;
+}
+
+.haloBtn{
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: #172b50;
+}
+
+.haloBtn:hover{
+    background-color: #213761;
+    box-shadow: rgba(192, 194, 194, 0.12) 0px 2px 4px 0px, rgba(170, 171, 172, 0.32) 0px 2px 16px 0px;
+}
+
+.last-dropdown{
+    bottom: 0px !important;
+    top: unset !important;
+}
+
+.nemoPagebtn{
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border: 2px solid gray;
+    background-color: rgb(114, 113, 113);
+    color: rgb(145, 144, 144) !important;
+    box-shadow: inset 0 0 10px #000000;
+    text-align: center;
+    font-size: 1.3rem !important;
+    align-items: center;
+}
+
+.haloPagebtn{
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border: 2px solid gray;
+    background-color: rgb(114, 113, 113);
+    color: rgb(145, 144, 144) !important;
+    box-shadow: inset 0 0 10px #000000;
+    text-align: center;
+    font-size: 1.3rem !important;
+    align-items: center;
+}
+
+.haloPagebtn:hover{
+    color: rgba(255, 255, 255, 0.815) !important;
+}
+
+.nemoPagebtn:hover{
+    color: rgba(255, 255, 255, 0.781) !important;
 }
 
 ul{
@@ -96,8 +175,6 @@ ul{
     display: inline-flex;
     flex-direction: row;
 }
-
-
 
 header{
     font-family: Arial, Helvetica, sans-serif;
@@ -127,17 +204,18 @@ header{
 }
 
 .faq-header{
-    font-size: 5rem;
+    font-size: 3.3rem;
     text-align: center;
-    margin-top: 4.1rem;
-    color: #fbbf13;
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: 0.8rem;
+    color: white;
+    font-family: 'roboto', sans-serif;
     margin-bottom: 1rem;
 }
 
 img {
     margin: auto;
-    background-color: rgba(200,204,209,0.03);
+    /* background-color: rgba(200,204,209,0.03); */
 }
 
 .faq-info{
@@ -188,16 +266,12 @@ img {
     position: relative;
     display: flex;
     flex-direction: row;
-    height: 2.1rem;
+    height: 2.5rem;
     font-size: 1.8rem;
 }
 
 ::selection{
     background-color: #f0ed33cc;
-}
-
-.search_wrap{
-    top: 2rem;
 }
 
 span{
@@ -209,22 +283,21 @@ form{
     position: fixed;
     display: flex;
     justify-content: left;
-    border: 2px solid black;
+    border: 2px solid white;
     right: 2%;
-    background-position: right;
-    background-color: rgb(68, 65, 65);
+    margin-top: -3.4rem;
     box-shadow: 3px 4px 3px rgb(1 1 2 / 20%), 3px 4px 3px rgb(1 1 2 / 20%);
+    z-index: 2;
 }
 
 .btn {
     display: flex;
     align-items: center;
     cursor: pointer;
-    /*background-color: #666460;*/
-    background-image: linear-gradient(10deg, #8b78439c, #42556183);
+    background-color: #162c53;
     color: white;
     border: none;
-    font-size: 1.6rem;
+    font-size: 2rem;
     transform: translate(0.90);
     z-index: 1;
 }
@@ -245,15 +318,16 @@ input:hover{
 }
 
 input{
-    background-color: white;
-    color: black;
+    background-color: #1d3a6bbe;
+    color: white;
     font-size: 1.5rem;
     border: none;
-    height: 2.1rem;
+    height: 1rem;
     outline: none;
-    border-right: 5px solid black;
+    border-right: 5px solid white;
     font-family: 'roboto';
     padding-left: 0.3rem;
+    padding: 1.3rem;
 }
 
 input[type=text] {
@@ -321,6 +395,7 @@ input[type=submit] {
     width: 75%;
     padding: 16%;
 }
+
 /* Dropdown Menu */
 
 .breadcrumb {
@@ -330,17 +405,20 @@ input[type=submit] {
     flex-direction: column;
     border: 2px solid whitesmoke;
     border-left: none;
-    width: 10%;
-    margin-top: 1rem;
-    background-image: linear-gradient(110deg, #3350ac9c, #4c95d1a4);
-    box-shadow: 3px 4px 3px rgb(1 1 2 / 20%), 3px 4px 3px rgb(1 1 2 / 20%);
+    width: 17%;
+    background-color: #162c53;
+    box-shadow: 2px -1px 3px rgb(1 1 2 / 20%), 3px 4px 3px rgb(1 1 2 / 20%);
     font-family: 'Roboto', sans-serif;
-    min-width: 120px;
+    min-width: 175px;
+    z-index: 0;
 }
 
 .breadcrumb a{
     text-decoration: none;
     color: #fbbf13;
+    font-size: 1.5rem;
+    font-family: 'roboto', sans-serif;
+    font-weight: 600;
 }
 
 .breadcrumb a:hover{
@@ -357,7 +435,10 @@ input[type=submit] {
 
 .breadcrumb li{
     list-style-type: none;
-    padding: 0px 0px 4px 0px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 } 
 
 /* Dropdown style */
@@ -374,7 +455,7 @@ input[type=submit] {
     border: none;
     cursor: pointer;
     width: 100%;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 700;
     font-family: 'roboto', sans-serif;
 }
@@ -385,6 +466,9 @@ input[type=submit] {
     display: inline-block;
     margin-bottom: 1rem;
     width: 100%;
+    border-right: none;
+    border-left: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.274);
 }
   
 /* Dropdown Content (Hidden by Default) */
@@ -393,10 +477,10 @@ input[type=submit] {
     position: absolute;
     /*background-color: transparent;*/
     background-color: white;
-    min-width: 150px;
+    min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    margin-left: 99%;
+    margin-left: 100%;
     top: 0;
     border: 1px solid #8d8787;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -404,9 +488,12 @@ input[type=submit] {
   
 /* Links inside the dropdown */
 .dropdown-content a {
-    font-size: 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'robot', sans-serif;
     color: black;
     padding: 10px 6px;
+    border: 1px solid rgba(0, 0, 0, 0.281);
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -416,18 +503,11 @@ input[type=submit] {
   
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    /* background-color: rgba(90, 120, 216, 0.692);  */
-    background-image: linear-gradient(110deg, #3350ac9c, #4c95d1a4);
-    border: 1.5px solid #4b4949; 
+    background-color: #162c53; 
+    /* background-image: linear-gradient(110deg, #334face1, #205d8f); */
     color: white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
-    transform: translate(1.04);
 }
-
-.dropdown-content a:hover {
-    transform: scale(1.04);
-}
-  
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
@@ -436,7 +516,8 @@ input[type=submit] {
   
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: rgba(79, 112, 221, 0.692);
+    /* background-color: rgba(79, 112, 221, 0.692); */
+    background-image: linear-gradient(110deg, white, whitesmoke);
     color: white;
 }
 
@@ -444,22 +525,27 @@ input[type=submit] {
     position: relative;
     display: inline-block;
     /*padding: 5px 4px 3px 170px;*/
-    margin-left: 87%;
-    padding: 0px 5px 5px 0px;
+    margin-left: 90%;
+    padding: 0px 0px 8px 0px;
+    color: white;
+    cursor: pointer;
 }
 
 #tooltip #tooltiptext {
     visibility: hidden;
     width: 180px;
-    background-color: rgb(34, 33, 33);
+    background-color: #162c53;
     color: #fff;
     text-align: center;
-    padding: 8px 8px;
+    padding: 1rem;
     border-radius: 6px;
     /* Position the tooltip text - see examples below! */
     position: absolute; 
     z-index: 1;
     font-family: monospace;
+    bottom: 0;
+    left: 24px;
+    border: 2px solid #eebb2dc2;
 }
   
 #tooltip:hover #tooltiptext {
@@ -475,6 +561,28 @@ input[type=submit] {
     list-style-type: square;
     color: black;
     list-style-position: outside;
+}
+
+/* Top nav bar */
+
+.top-screen-stretch{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: #162c53;
+    z-index: 1;
+    border-bottom: 2px solid whitesmoke;
+    box-shadow: 2px 4px 3px rgb(1 1 2 / 20%), 3px 4px 3px rgb(1 1 2 / 20%);
+}
+
+.top-contents-wrap{
+    margin-left: 34%;
 }
 
 

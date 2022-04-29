@@ -12,7 +12,6 @@ var Password_terms = ["How do I reset my password"]
 var Course_terms = ["Where do I find my courses", "My course module is not being marked as “Complete”", "There is a blank window popping up when I try to open my course"]
 var Simulator_terms = ["Why isn't the simulator working on my Ipad?"]
 
-
 function autocomplete(inp, arr) {
     var currentFocus;
     inp.addEventListener("input", function(e) {
@@ -30,9 +29,9 @@ function autocomplete(inp, arr) {
             b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
             b.innerHTML += arr[i].substr(val.length);
             b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
-                b.addEventListener("click", function(e) {
-                inp.value = this.getElementsByTagName("input")[0].value;
-                closeAllLists();
+              b.addEventListener("click", function(e) {
+              inp.value = this.getElementsByTagName("input")[0].value;
+              closeAllLists();
             });
             a.appendChild(b);
           }
